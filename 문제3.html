@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            레이아웃을 위한 HTML5 요소 
+        </title>
+        <style>
+            html, body {margin: 0; padding: 0; height: 100%;}
+            header{width: 100%; height: 15%;
+                background-color: aqua;}
+                h1{color: black; text-align: center; text-shadow: 1ch;}
+            nav{width: 100%; height: 10%; float: left;
+                background-color: aquamarine;}
+                ul {list-style:none;}
+                li {float: right; color: blue;}
+            section{width: 50%; height: 70%; float:left;
+                background-color: rosybrown; text-align: center;}
+            article{width: 50%; height: 70%; float:left;
+                background-color: blue;}
+                .test{background-color: orange; text-align: center; text-rendering: auto;}
+            aside{width: 100%; height: 90%; float:left;
+                background-color: blueviolet; text-align: center;}
+            footer{width: 100%; height: 5%; clear:both;
+                background-color: green; text-align: center;}
+                .문의{background-color: yellow; text-align: center;
+                }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>HTML5웹프로그래밍 출석수업 과제물</h1>
+        </header>
+        <nav>
+            <ui class="manu">바로가기</ui>
+            <li><a href="https://www.knou.ac.kr/knou/index.do?epTicket=LOG" target="view">한국방송통신대학교</a></li>
+            <li><a href="https://cs.knou.ac.kr/cs1/index.do?epTicket=LOG" target="view">컴퓨터과학과</a></li>
+            <li><a href="문제2.html" target="view">노혜림_202134-243481</a></li>
+        </nav>
+        <section>
+        새로운 창 출력
+        <iframe src="문제2.html" name="view"
+        width=95% height=90%
+        srcdoc="새로운 창 출력 " > </iframe> 
+        </section>
+        <article><div class="test">노혜림 html5웹프로그래밍 실습해보다</div>
+            <aside> 동영상 재생 - 짱구아빠 신형만의 명언 모음 [오세홍 성우님의 인생상담]
+                <video controls width=100%; height=90%; poster="movie_poster.png">
+                    <source src="짱구아빠 신형만의 명언 모음 [오세홍 성우님의 인생상담].mp4#t=10,15"  type="video/mp4" controls autoplay>
+                    <source src="짱구아빠 신형만의 명언 모음 [오세홍 성우님의 인생상담].webm#t=10,15"  type="video/webm" controls autoplay>
+                    <source src="짱구아빠 신형만의 명언 모음 [오세홍 성우님의 인생상담].ogv#t=10,15"  type="video/ogv" controls autoplay>
+                </video>
+            </aside> 
+        </article>
+        <footer><span class="문의">문의</span>e-mail : nhr3711@knou.ac.kr <a href="mailto:nhr3711@knou.ac.kr">메일보내기</a>
+        </footer>
+    </body>
+</html>
